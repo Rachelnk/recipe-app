@@ -17,8 +17,8 @@
    * Install the necessary packages: `npm install`
    * Spoonacular API: Add the api key to the API_KEY variable in the .env file
    * ElephantSQL Setup:
-        1. Create a new database instance on ElephantSQL.
-        2. Copy the connection string provided by ElephantSQL.
+        * Create a new database instance on ElephantSQL.
+        * Copy the connection string provided by ElephantSQL.
    * Prisma Setup:
       * Replace the DATABASE_URL in the .env file with your ElephantSQL connection string.
       * Initialize Prisma and generate the Prisma client:
