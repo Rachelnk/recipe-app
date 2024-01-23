@@ -2,14 +2,14 @@
 #### This application allows users to search for recipes, add and delete recipes to their favorite list.
 
 # Prerequisites:
-"*" A [Spoonacular API key](https://spoonacular.com/food-api) for the recipe API
-"*" An account on [ElephantSQL ](https://www.elephantsql.com/) for the database
-"*" Install node.js and npm
+  * A [Spoonacular API key](https://spoonacular.com/food-api) for the recipe API
+  * An account on [ElephantSQL](https://www.elephantsql.com/) for the database
+  * Install node.js and npm
 
 ## Installation Instructions
 1. Clone the repository
     *  `$ git clone remote URL`
-    * `cd recipe-app`
+    *  `cd recipe-app`
 
 2. Setting up backend:
    
@@ -20,8 +20,8 @@
         1. Create a new database instance on ElephantSQL.
         2. Copy the connection string provided by ElephantSQL.
    * Prisma Setup:
-      "*" Replace the DATABASE_URL in the .env file with your ElephantSQL connection string.
-      "*" Initialize Prisma and generate the Prisma client:
+      * Replace the DATABASE_URL in the .env file with your ElephantSQL connection string.
+      * Initialize Prisma and generate the Prisma client:
           `npx prisma init`
           `npx prisma generate`
     * Start the backend server:
