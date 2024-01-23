@@ -27,11 +27,11 @@
     * Start the backend server:
           `npm start`
 
-   3. Setting up the Frontend:
+3. Setting up the Frontend:
 
-      * Navigate to the frontend directory:
+    * Navigate to the frontend directory:
          `cd frontend`
-       * Install the necessary packages:
+    * Install the necessary packages:
          `npm install`
-       * Start the frontend development server:
+    * Start the frontend development server:
           `npm run dev`
