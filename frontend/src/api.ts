@@ -1,7 +1,9 @@
 import { Recipe } from "./types";
-
+// https://recipe-search-kx1b.onrender.com
 export const searchRecipes = async (searchTerm: string, page:number) => {
-  const baseUrl = new URL ("http://localhost:5000/api/recipes/search");
+  // const baseUrl = new URL ("http://localhost:5000/api/recipes/search");
+  const baseUrl = new URL ("https://recipe-search-kx1b.onrender.com/api/recipes/search")
+
   baseUrl.searchParams.append("searchTerm", searchTerm);
   baseUrl.searchParams.append("page", String(page));
 
@@ -16,7 +18,8 @@ export const searchRecipes = async (searchTerm: string, page:number) => {
 }
 
 export const getRecipeSummary = async (recipeId: string) => {
-  const url = new URL(`http://localhost:5000/api/recipes/${recipeId}/summary`);
+  // const url = new URL(`http://localhost:5000/api/recipes/${recipeId}/summary`);
+  const url = new URL(`https://recipe-search-kx1b.onrender.com/api/recipes/${recipeId}/summary`)
   const response = await fetch(url);
 
   if(!response.ok) {
@@ -28,7 +31,8 @@ export const getRecipeSummary = async (recipeId: string) => {
 };
 
 export const getFavouriteRecipes = async() => {
-  const url = new URL('http://localhost:5000/api/recipes/favourite')
+  // const url = new URL('http://localhost:5000/api/recipes/favourite')
+  const url = new URL('https://recipe-search-kx1b.onrender.com/api/recipes/favourite')
   const response = await fetch(url);
 
   if(!response.ok) {
@@ -41,7 +45,8 @@ export const getFavouriteRecipes = async() => {
 };
  
 export const addFavouriteRecipe = async (recipe: Recipe) => {
-  const url = new URL('http://localhost:5000/api/recipes/favourite')
+  // const url = new URL('http://localhost:5000/api/recipes/favourite')
+  const url = new URL('https://recipe-search-kx1b.onrender.com/api/recipes/favourite')
   const body = {
     recipeId: recipe.id,
   };
@@ -62,7 +67,7 @@ export const addFavouriteRecipe = async (recipe: Recipe) => {
 }
 
 export const removeFavouriteRecipe = async(recipe: Recipe) => {
-  const url = new URL('http://localhost:5000/api/recipes/favourite')
+  const url = new URL('https://recipe-search-kx1b.onrender.com/api/recipes/favourite')
   const body = {
     recipeId: recipe.id,
   };
